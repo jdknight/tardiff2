@@ -17,6 +17,12 @@ Perform a local clean build:
 python -m build
 ```
 
+Verify packages can be published:
+
+```shell
+twine check dist/*
+```
+
 Validate artifacts with a local pip install:
 
 ```shell
