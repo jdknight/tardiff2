@@ -2,6 +2,7 @@
 # Copyright jdknight
 
 from pathlib import Path
+from tardiff2 import __version__ as tardiff2_version
 from tardiff2.defs import DEFAULT_ATTRIBS
 from tardiff2.defs import EXTENDED_ATTRIBS
 from tardiff2.defs import EXTRA_ATTRIBS
@@ -33,6 +34,8 @@ def main() -> None:
             help='Only compare file names and not attributes')
         parser.add_argument('--strip-components', type=int, default=1,
             help='Strip given number of leading components from file names')
+        parser.add_argument('--version', action='version',
+            version='%(prog)s ' + tardiff2_version)
         parser.add_argument('--[no-]ATTRIB', action='store_true',
             help='Attributes to check or ignore')
 
