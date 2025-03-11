@@ -1,5 +1,10 @@
 # tardiff2
 
+[![pip Version](https://badgen.net/pypi/v/tardiff2?label=PyPI)](https://pypi.python.org/pypi/tardiff2)
+[![Build Status](https://github.com/jdknight/tardiff2/actions/workflows/build.yml/badge.svg)](https://github.com/jdknight/tardiff2/actions/workflows/build.yml)
+
+## Overview
+
 Provides a utility to compare two (or more) tar files. This is aimed to
 be a helper when comparing evolving tar files, allowing sanity checks to
 expected file lists, modes, ownerships and more.
