@@ -11,6 +11,7 @@ authors = [
     {name = 'James Knight', email = 'git@jdknight.me'},
 ]
 requires-python = '>=3.9'
+readme = 'README.md'
 classifiers = [
     'Development Status :: 4 - Beta',
     'Environment :: Console',
