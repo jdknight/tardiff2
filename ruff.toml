@@ -1,0 +1,21 @@
+lint.select = [
+    'ALL',
+]
+
+lint.ignore = [
+    # we are complex
+    'C90',
+    # ignore pydocstyle
+    'D',
+    # imports are sorted lexicographically in this project
+    'I001',
+    # ignore "too many" warnings
+    'PLR',
+    # project uses unittest module
+    'PT',
+    # single quotes are preferred in this project
+    'Q000',
+    'Q001',
+    # ignore flake8-print since we support/expect printing
+    'T20',
+]

@@ -1,0 +1,40 @@
+.TH tardiff2 1 "March 2025" "1.0" "tardiff2 man page"
+
+.SH NAME
+tardiff2 - Tool to compare tar files
+
+.SH SYNOPSIS
+tardiff2 <options> file1 file2 [fileN ...]
+
+.SH DESCRIPTION
+tardiff2 provides a utility to compare two (or more) tar files. This is
+aimed to be a helper when comparing evolving tar files, allowing sanity
+checks to expected file lists, modes, ownerships and more.
+
+.SH OPTIONS
+.TP
+.BI --all
+Compare all known attributes.
+.TP
+.BI --help,\ -h
+Display this help and exit.
+.TP
+.BI --ignore-directories,\ -D
+Ignore directory entries.
+.TP
+.BI --more,\ -m
+Show a detailed comparison of file differences.
+.TP
+.BI --names,\ -n
+Only compare file names and not attributes.
+.TP
+.BI --strip-components\ <num>
+Strip given number of leading components from file names (default: 1).
+.TP
+.BI --[no-]ATTRIB
+Explicit attributes to use or ignore. To compare using mtime attribute,
+the argument `--mtime` can be used. To no compare using the size
+attribute, the argument `--no-size` can be used.
+
+.SH SEE ALSO
+Project home <https://github.com/jdknight/tardiff2>

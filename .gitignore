@@ -1,0 +1,15 @@
+# byte-compiled, optimized, etc.
+__pycache__/
+*.py[cod]
+
+# building, packaging, etc.
+/*.egg-info/
+/build/
+/dist/
+
+# testing
+/htmlcov*/
+/venv*/
+/.coverage*
+.tox*
+!.coveragerc
